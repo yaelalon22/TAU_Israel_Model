@@ -1,5 +1,4 @@
 clear; clc; close all; 
-tic;
 %% Ask user for input
 [x_steps,y_steps,num_drops,B_0,P_0,D_P,D_B,user_time_limit_hours] = users_inputs;
 % num_drops = 4;
@@ -12,7 +11,7 @@ tic;
 % y = y_steps*10; % um
 % D_P = ones(x_steps,y_steps)*7;D_P(:,1:10)=100;D_P(:,11:20)=5; % Matrix
 % D_B = ones(x_steps,y_steps)*3; % Matrix
-
+tic;
 dx = 10; % um
 dy = 10; % um
 k = num_drops;n=x_steps*y_steps;
